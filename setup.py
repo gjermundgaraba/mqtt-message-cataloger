@@ -1,9 +1,12 @@
+import ez_setup
+ez_setup.use_setuptools()
+
 from setuptools import setup
 
 setup(
         name='mqtt-message-cataloger',
         version='1.0',
-        packages=[''],
+        packages=['mqtt-message-cataloger'],
         url='https://github.com/bjaanes/mqtt-message-cataloger',
         license='MIT',
         author='Gjermund Bjaanes',
