@@ -10,7 +10,8 @@ def on_message(client, userdata, message):
     decoded_message = message.payload.decode("utf-8")
     database_record = {
         "topic": message.topic,
-        "message": decoded_message
+        "message": decoded_message,
+        "timestamp": message.timestamp
     }
     mongo_collection.insert_one(database_record)
 
